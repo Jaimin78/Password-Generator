@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body, 
+html {     
+   height:100%;
+   background:#040034;
+}
+
+.title{
+   color:#040034; 
+   text-align:center;
+   padding-top:30px;
+}
+
+.container { 
+   position:relative;
+   top:30%;
+   display: flex; 
+   margin:auto;
+  /* height:40%;*/
+   width:70%;
+   flex-direction:column;
+   justify-content:space-between;     
+   background-color:white;
+   padding:5px;
+   border-radius:15px;
+} 
+.box1{
+    width:100%;
+    display:flex;
+    align-item:center;
+    justify-content:center;
+    flex-direction:column;
+}
+#password{
+    margin:5px;
+    width:95%;
+    height:50px;
+    background-color:#040034;
+    border-radius:10px;
+    
+}
+ 
+
+#span{
+   width:100%;
+   height:100%;
+   color:white;
+   padding-top:13px;
+   display:flex;
+   justify-content:center;      
+   font-weight:bold;
+}
+
+.box2{
+    width:100%;
+    display:flex;
+    align-item:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.box2 button{
+    width:95%;
+    height:50px;
+    margin:5px;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.box2 button:hover{
+    outline:3px solid grey;
+}
+
+#Easy{
+    background-color:#fff100;
+}
+
+#Medium{
+    background-color:#ff7300;
+}
+
+#Hard{
+    background-color:#ff1f00;
+}
