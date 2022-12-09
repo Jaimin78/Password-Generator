@@ -1,9 +1,10 @@
 class PasswordGenerator{  
-    constructor(UpperCase, LowerCase, SpecialChar, Number){
+    constructor(UpperCase, LowerCase, SpecialChar, Number, CommonChar){
       this.Upper = UpperCase;
       this.Lower = LowerCase;
       this.Special = SpecialChar;
       this.Number = Number;
+      this.CommonChar = CommonChar;
     }
     
     random(value){
@@ -25,7 +26,12 @@ class PasswordGenerator{
     hard(){
         let Password =  this.Special[this.random(this.Special)] + this.Upper[this.random(this.Upper)] + this.Lower[this.random(this.Lower)] + this.Special[this.random(this.Special)] + this.Upper[this.random(this.Upper)] + this.Number[this.random(this.Number)] + this.Upper[this.random(this.Upper)] + this.Upper[this.random(this.Upper)] + this.Lower[this.random(this.Lower)] +  this.Number[this.random(this.Number)] + this.Upper[this.random(this.Upper)] + this.Number[this.random(this.Number)]
         return span.innerText = `${Password}`
-    } 
+    }
+
+  common(){
+        let Password =  this.CommonChar[this.random(this.CommonChar)]
+        return span.innerText = `${Password}`
+    }
     
 }
 
@@ -37,9 +43,9 @@ const SpecialChar = ['+','×','÷','=','/','_','€','£','₹','!','@','#','$',
 
 const Number = ['0','1','2','3','4','5','6','7','8','9'];
 
-const Common = ['12345678','123456','abcdef','querty','abc@123','google','password']
+const CommonChar = ['12345678','123456','abcdef','querty','abc@123','google','password','iloveyou','ineedapassword','changeme','secret','iamforgetful','newpassword','IamACompleteIdiot','nothing','nothingagain','iforgot','whydoialwaysforget']
 
-let newpass = new PasswordGenerator(UpperCase,LowerCase, SpecialChar, Number);
+let newpass = new PasswordGenerator(UpperCase,LowerCase, SpecialChar, Number, CommonChar);
 
 
 const Easy = () => {
@@ -52,4 +58,8 @@ const Medium = () => {
 
 const Hard = () => {
     newpass.hard()
+}
+
+const Common = () => {
+    newpass.common()
 }
