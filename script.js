@@ -37,6 +37,8 @@ const SpecialChar = ['+','×','÷','=','/','_','€','£','₹','!','@','#','$',
 
 const Number = ['0','1','2','3','4','5','6','7','8','9'];
 
+const Common = ['12345678','123456','abcdef','querty','abc@123','google','password']
+
 let newpass = new PasswordGenerator(UpperCase,LowerCase, SpecialChar, Number);
 
 
